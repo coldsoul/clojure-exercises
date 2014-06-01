@@ -14,3 +14,6 @@
 
 (defn bizarre-factorial [number]
   (apply * (range 1 (+ number 1))))
+
+(defn prefix-of? [candidate numbers]
+  (= (take (count candidate) numbers) candidate))

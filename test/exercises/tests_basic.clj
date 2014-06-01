@@ -20,3 +20,8 @@
 
 (fact "bizarre-factorial finds factorial without iteration or recursion"
       (basic/bizarre-factorial 3) => 6)
+
+(fact "prefix-of? checks if first seq are the first element of the sequence passed"
+      (basic/prefix-of? [1 2] [1 2 3 4]) => true
+      (basic/prefix-of? [1] [1 2 3]) => true
+      (basic/prefix-of? [1 2] [4 5 6]) => false)
