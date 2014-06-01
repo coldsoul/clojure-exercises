@@ -25,3 +25,7 @@
       (basic/prefix-of? [1 2] [1 2 3 4]) => true
       (basic/prefix-of? [1] [1 2 3]) => true
       (basic/prefix-of? [1 2] [4 5 6]) => false)
+
+(fact "tails returns a collection of successively smaller collections"
+      (basic/tails '(1 2 3 4)) => '((1 2 3 4) (2 3 4) (3 4) (4) ()))
+

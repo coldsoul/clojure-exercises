@@ -17,3 +17,11 @@
 
 (defn prefix-of? [candidate numbers]
   (= (take (count candidate) numbers) candidate))
+
+(def tails
+  (fn [seq]
+    (map drop
+       (range (inc (count seq)))
+       (repeat (inc (count seq)) seq))))
+
+
