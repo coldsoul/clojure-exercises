@@ -14,3 +14,6 @@
 (fact "third-lst returns the third element of a list"
       (basic/third-lst '(1 2 3 4 5)) => 3
       (basic/third-lst '(2 3)) => nil)
+
+(fact "add-squares adds the squares of numbers provided as arguments"
+      (basic/add-squares 1 2) => 5)
