@@ -17,3 +17,6 @@
 
 (fact "add-squares adds the squares of numbers provided as arguments"
       (basic/add-squares 1 2) => 5)
+
+(fact "bizarre-factorial finds factorial without iteration or recursion"
+      (basic/bizarre-factorial 3) => 6)

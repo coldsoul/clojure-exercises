@@ -11,3 +11,6 @@
 (def add-squares
   (fn [& numbers]
     (apply + (map square numbers))))
+
+(defn bizarre-factorial [number]
+  (apply * (range 1 (+ number 1))))
